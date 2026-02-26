@@ -11,13 +11,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://vasriya.com" />
   <link rel="canonical" href="https://vasriya.com/" />
+  <link rel="stylesheet" href="/assets/styles.css" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-
-  <!-- Schema Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -32,396 +27,6 @@
     }
   }
   </script>
-
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --ink: #0f0e0b;
-      --paper: #faf8f3;
-      --muted: #6b6860;
-      --accent: #c8410a;
-      --accent-light: #f4ede6;
-      --border: #e5e2da;
-      --serif: 'Instrument Serif', Georgia, serif;
-      --sans: 'DM Sans', system-ui, sans-serif;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: var(--sans);
-      background: var(--paper);
-      color: var(--ink);
-      line-height: 1.6;
-      min-height: 100vh;
-    }
-
-    /* ─── HEADER ─── */
-    header {
-      border-bottom: 1px solid var(--border);
-      padding: 0 clamp(1rem, 4vw, 3rem);
-      position: sticky;
-      top: 0;
-      background: rgba(250,248,243,0.95);
-      backdrop-filter: blur(8px);
-      z-index: 100;
-    }
-
-    .header-inner {
-      max-width: 1180px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 62px;
-    }
-
-    .logo {
-      font-family: var(--serif);
-      font-size: 1.55rem;
-      color: var(--ink);
-      text-decoration: none;
-      letter-spacing: -0.02em;
-    }
-
-    .logo span { color: var(--accent); }
-
-    nav { display: flex; gap: 2rem; align-items: center; }
-
-    nav a {
-      font-size: 0.875rem;
-      font-weight: 500;
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    nav a:hover { color: var(--ink); }
-
-    /* ─── HERO ─── */
-    .hero {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 4vw, 3rem);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .hero-eyebrow {
-      font-size: 0.8rem;
-      font-weight: 500;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 1rem;
-    }
-
-    .hero h1 {
-      font-family: var(--serif);
-      font-size: clamp(2.6rem, 5vw, 4rem);
-      line-height: 1.08;
-      letter-spacing: -0.02em;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero h1 em {
-      font-style: italic;
-      color: var(--accent);
-    }
-
-    .hero-sub {
-      font-size: 1.05rem;
-      color: var(--muted);
-      line-height: 1.7;
-      margin-bottom: 2rem;
-      font-weight: 300;
-    }
-
-    .btn-primary {
-      display: inline-block;
-      background: var(--ink);
-      color: var(--paper);
-      padding: 0.85rem 1.8rem;
-      border-radius: 2px;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: background 0.2s, transform 0.15s;
-      letter-spacing: 0.01em;
-    }
-
-    .btn-primary:hover {
-      background: var(--accent);
-      transform: translateY(-1px);
-    }
-
-    .hero-featured {
-      background: var(--ink);
-      border-radius: 4px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .hero-featured-img {
-      width: 100%;
-      aspect-ratio: 16/10;
-      background: linear-gradient(135deg, #1a1814 0%, #2d2a24 50%, #1a0f08 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 2rem;
-    }
-
-    .hero-featured-tag {
-      font-size: 0.7rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.5rem;
-    }
-
-    .hero-featured h2 {
-      font-family: var(--serif);
-      font-size: 1.5rem;
-      color: var(--paper);
-      line-height: 1.3;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero-featured p {
-      font-size: 0.85rem;
-      color: rgba(250,248,243,0.6);
-    }
-
-    /* ─── SECTION ─── */
-    section { max-width: 1180px; margin: 0 auto; padding: 0 clamp(1rem, 4vw, 3rem) 4rem; }
-
-    .section-header {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      border-top: 2px solid var(--ink);
-      padding-top: 1rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .section-title {
-      font-family: var(--serif);
-      font-size: 1.6rem;
-      letter-spacing: -0.02em;
-    }
-
-    .section-link {
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: var(--accent);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    /* ─── ARTICLE GRID ─── */
-    .articles-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2.5rem;
-    }
-
-    .article-card {
-      text-decoration: none;
-      color: inherit;
-      display: block;
-    }
-
-    .article-card:hover .card-title { color: var(--accent); }
-
-    .card-thumb {
-      width: 100%;
-      aspect-ratio: 16/9;
-      border-radius: 3px;
-      margin-bottom: 1rem;
-      overflow: hidden;
-      background: var(--border);
-    }
-
-    .card-thumb-inner {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.5rem;
-      transition: transform 0.3s;
-    }
-
-    .article-card:hover .card-thumb-inner { transform: scale(1.05); }
-
-    .card-tag {
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.4rem;
-    }
-
-    .card-title {
-      font-family: var(--serif);
-      font-size: 1.2rem;
-      line-height: 1.3;
-      margin-bottom: 0.5rem;
-      transition: color 0.2s;
-    }
-
-    .card-excerpt {
-      font-size: 0.875rem;
-      color: var(--muted);
-      font-weight: 300;
-      line-height: 1.6;
-    }
-
-    .card-meta {
-      font-size: 0.75rem;
-      color: var(--muted);
-      margin-top: 0.75rem;
-      padding-top: 0.75rem;
-      border-top: 1px solid var(--border);
-    }
-
-    /* ─── HIGHLIGHT STRIP ─── */
-    .highlight-strip {
-      background: var(--ink);
-      padding: 4rem clamp(1rem, 4vw, 3rem);
-      margin-bottom: 4rem;
-    }
-
-    .highlight-strip-inner {
-      max-width: 1180px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .highlight-strip h2 {
-      font-family: var(--serif);
-      font-size: 2.2rem;
-      color: var(--paper);
-      line-height: 1.2;
-    }
-
-    .highlight-strip h2 em { color: var(--accent); font-style: italic; }
-
-    .highlight-articles { display: flex; flex-direction: column; gap: 1.5rem; }
-
-    .highlight-item {
-      display: flex;
-      gap: 1.2rem;
-      align-items: flex-start;
-      text-decoration: none;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .highlight-item:last-child { border-bottom: none; padding-bottom: 0; }
-
-    .highlight-num {
-      font-family: var(--serif);
-      font-size: 2rem;
-      color: var(--accent);
-      line-height: 1;
-      min-width: 2rem;
-    }
-
-    .highlight-item h3 {
-      font-family: var(--serif);
-      font-size: 1rem;
-      color: var(--paper);
-      line-height: 1.4;
-      margin-bottom: 0.3rem;
-    }
-
-    .highlight-item p { font-size: 0.8rem; color: rgba(250,248,243,0.5); font-weight: 300; }
-
-    /* ─── TOPICS ─── */
-    .topics-grid { display: flex; gap: 1rem; flex-wrap: wrap; }
-
-    .topic-pill {
-      padding: 0.6rem 1.2rem;
-      border: 1px solid var(--border);
-      border-radius: 100px;
-      text-decoration: none;
-      font-size: 0.875rem;
-      color: var(--ink);
-      transition: all 0.2s;
-      background: white;
-    }
-
-    .topic-pill:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-
-    /* ─── FOOTER ─── */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 3rem clamp(1rem, 4vw, 3rem);
-      text-align: center;
-    }
-
-    .footer-inner { max-width: 1180px; margin: 0 auto; }
-
-    .footer-logo {
-      font-family: var(--serif);
-      font-size: 1.3rem;
-      color: var(--ink);
-      margin-bottom: 0.5rem;
-    }
-
-    .footer-tagline { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.5rem; }
-
-    .footer-links { display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 1.5rem; }
-
-    .footer-links a { font-size: 0.8rem; color: var(--muted); text-decoration: none; }
-    .footer-links a:hover { color: var(--ink); }
-
-    .footer-copy { font-size: 0.75rem; color: var(--border); }
-
-    /* ─── RESPONSIVE ─── */
-    @media (max-width: 768px) {
-      .hero { grid-template-columns: 1fr; gap: 2rem; }
-      .articles-grid { grid-template-columns: 1fr; }
-      .highlight-strip-inner { grid-template-columns: 1fr; gap: 2rem; }
-      nav { display: none; }
-    }
-
-    /* ─── ANIMATIONS ─── */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .hero-text { animation: fadeUp 0.6s ease both; }
-    .hero-featured { animation: fadeUp 0.6s ease 0.15s both; }
-    .article-card { animation: fadeUp 0.5s ease both; }
-    .article-card:nth-child(1) { animation-delay: 0s; }
-    .article-card:nth-child(2) { animation-delay: 0.1s; }
-    .article-card:nth-child(3) { animation-delay: 0.2s; }
-
-    /* AdSense placeholder */
-    .ad-unit {
-      background: var(--accent-light);
-      border: 1px dashed var(--border);
-      border-radius: 3px;
-      padding: 1rem;
-      text-align: center;
-      font-size: 0.75rem;
-      color: var(--muted);
-      margin: 2rem 0;
-    }
-  </style>
 </head>
 <body>
 
@@ -429,6 +34,7 @@
 <header>
   <div class="header-inner">
     <a class="logo" href="/">Vasriya<span>.</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
     <nav>
       <a href="/articles/best-ai-writing-tools-india.html">AI Writing</a>
       <a href="/articles/chatgpt-vs-gemini-india.html">Reviews</a>
@@ -444,14 +50,14 @@
     <p class="hero-eyebrow">AI Tools for India</p>
     <h1>Find the <em>right</em> AI tool for every task</h1>
     <p class="hero-sub">Honest reviews, practical guides, and curated picks — so you spend less time searching and more time doing.</p>
-    <a class="btn-primary" href="#latest">Browse Articles →</a>
+    <a class="btn-primary" href="#latest">Browse Articles</a>
   </div>
   <a class="hero-featured" href="/articles/earn-money-ai-tools-india.html">
     <div class="hero-featured-img">
       <div style="font-size:3rem;margin-bottom:1rem;">💡</div>
       <p class="hero-featured-tag">Most Popular</p>
       <h2>How to Earn Money Using AI Tools in India</h2>
-      <p>Freelancing, content creation, and more — real methods that work in 2025</p>
+      <p>Freelancing, content creation, and more — real methods that work in 2026</p>
     </div>
   </a>
 </div>
@@ -474,9 +80,9 @@
         <div class="card-thumb-inner" style="background:linear-gradient(135deg,#fef3ee,#fde0d0)">✍️</div>
       </div>
       <p class="card-tag">AI Writing</p>
-      <h3 class="card-title">Best AI Writing Tools for Indians in 2025 (Free & Paid)</h3>
+      <h3 class="card-title">Best AI Writing Tools for Indians in 2026 (Free & Paid)</h3>
       <p class="card-excerpt">From blog posts to emails — these tools write faster than you can think. We tested 12 tools so you don't have to.</p>
-      <p class="card-meta">June 2025 · 8 min read</p>
+      <p class="card-meta">February 2026 · 8 min read</p>
     </a>
 
     <a class="article-card" href="/articles/chatgpt-vs-gemini-india.html">
@@ -484,9 +90,9 @@
         <div class="card-thumb-inner" style="background:linear-gradient(135deg,#eef3ff,#d0dcff)">⚡</div>
       </div>
       <p class="card-tag">Review</p>
-      <h3 class="card-title">ChatGPT vs Gemini for Indian Users — Which One Should You Use?</h3>
+      <h3 class="card-title">ChatGPT vs Gemini for Indian Users — Which One to Use?</h3>
       <p class="card-excerpt">Both are free. Both are powerful. But one is clearly better for Indian languages, pricing, and everyday tasks.</p>
-      <p class="card-meta">June 2025 · 6 min read</p>
+      <p class="card-meta">February 2026 · 6 min read</p>
     </a>
 
     <a class="article-card" href="/articles/free-ai-image-generators.html">
@@ -494,9 +100,9 @@
         <div class="card-thumb-inner" style="background:linear-gradient(135deg,#eefbf0,#c8f0d0)">🎨</div>
       </div>
       <p class="card-tag">Image AI</p>
-      <h3 class="card-title">5 Best Free AI Image Generators in 2025 — No Credit Card Needed</h3>
+      <h3 class="card-title">5 Best Free AI Image Generators in 2026 — No Credit Card Needed</h3>
       <p class="card-excerpt">Generate stunning images for free. Social media posts, thumbnails, art prints — these tools do it all.</p>
-      <p class="card-meta">June 2025 · 5 min read</p>
+      <p class="card-meta">February 2026 · 5 min read</p>
     </a>
   </div>
 </section>
@@ -523,7 +129,7 @@
       <a class="highlight-item" href="/articles/best-ai-writing-tools-india.html">
         <span class="highlight-num">03</span>
         <div>
-          <h3>Best AI Writing Tools for Indians 2025</h3>
+          <h3>Best AI Writing Tools for Indians 2026</h3>
           <p>12 tools tested — 3 stand out. Here's our honest verdict.</p>
         </div>
       </a>
@@ -559,9 +165,10 @@
       <a href="/disclaimer.html">Disclaimer</a>
       <a href="/contact.html">Contact</a>
     </div>
-    <p class="footer-copy">© 2025 Vasriya. Some links may be affiliate links. We only recommend tools we genuinely believe in.</p>
+    <p class="footer-copy">© 2026 Vasriya. Some links may be affiliate links. We only recommend tools we genuinely believe in.</p>
   </div>
 </footer>
 
+<script src="/assets/script.js" defer></script>
 </body>
 </html>
