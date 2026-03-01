@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3412848514366354"
      crossorigin="anonymous"></script>
   <title>Vasriya — AI Tools, Reviews & Guides for India</title>
@@ -12,10 +13,15 @@
   <meta property="og:description" content="Discover the best AI tools, honest reviews, and practical guides to boost your productivity." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://vasriya.com" />
+  <meta property="og:image" content="https://vasriya.com/assets/og-default.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vasriya — AI Tools, Reviews & Guides for India" />
+  <meta name="twitter:description" content="Discover the best AI tools, honest reviews, and practical guides to boost your productivity." />
   <link rel="canonical" href="https://vasriya.com/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/styles.css" />
 
   <script type="application/ld+json">
@@ -32,8 +38,20 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Vasriya",
+    "url": "https://vasriya.com",
+    "description": "AI Tools, Reviews & Guides for India",
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
+
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- HEADER -->
 <header>
@@ -41,22 +59,34 @@
     <a class="logo" href="/">Vasriya<span>.</span></a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
     <nav>
-      <a href="/articles/best-ai-writing-tools-india.html">AI Writing</a>
-      <a href="/articles/chatgpt-vs-gemini-india.html">Reviews</a>
-      <a href="/articles/free-ai-image-generators.html">Image AI</a>
-      <a href="/articles/earn-money-ai-tools-india.html">Earn with AI</a>
+      <a href="/">Home</a>
+      <a href="/tools.html">AI Tools</a>
+      <a href="/articles.html">Articles</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
     </nav>
     <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
   </div>
 </header>
 
 <!-- HERO -->
-<div class="hero">
+<div class="hero" id="main">
   <div class="hero-text">
     <p class="hero-eyebrow">AI Tools for India</p>
-    <h1>Find the <em>right</em> AI tool for every task</h1>
+    <h1>Discover The <em>AI Tools</em> Shaping The Future</h1>
     <p class="hero-sub">Honest reviews, practical guides, and curated picks — so you spend less time searching and more time doing.</p>
-    <a class="btn-primary" href="#latest">Browse Articles</a>
+    <div class="search-bar" role="search">
+      <span class="search-bar-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Search AI tools..." aria-label="Search AI tools" autocomplete="off" />
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    <div class="popular-tools">
+      <span>Popular:</span>
+      <a href="/articles/chatgpt-vs-gemini-india.html">ChatGPT</a>
+      <a href="/articles/chatgpt-vs-gemini-india.html">Gemini</a>
+      <a href="/articles/free-ai-image-generators.html">Midjourney</a>
+      <a href="/articles/best-ai-writing-tools-india.html">Claude</a>
+    </div>
   </div>
   <a class="hero-featured" href="/articles/earn-money-ai-tools-india.html">
     <div class="hero-featured-img">
@@ -68,47 +98,107 @@
   </a>
 </div>
 
-<!-- AD UNIT (replace with real AdSense code) -->
-<div style="max-width:1180px;margin:0 auto;padding:0 clamp(1rem,4vw,3rem)">
+<!-- AD UNIT -->
+<div style="max-width:1200px;margin:0 auto;padding:0 clamp(1rem,4vw,3rem)">
   <div class="ad-unit">Advertisement — Google AdSense will appear here once approved</div>
 </div>
+
+<!-- TRENDING AI TOOLS -->
+<section>
+  <div class="section-header">
+    <h2 class="section-title">Trending AI Tools</h2>
+    <a class="section-link" href="/tools.html">View all →</a>
+  </div>
+  <div class="articles-grid" style="grid-template-columns: repeat(4, 1fr);">
+    <div class="ai-tool-card">
+      <div class="ai-tool-card-header">
+        <div class="ai-tool-card-icon">🤖</div>
+        <div>
+          <div class="ai-tool-card-name">ChatGPT</div>
+          <div class="ai-tool-card-category">AI Chatbot</div>
+        </div>
+      </div>
+      <p class="ai-tool-card-desc">The gold standard for AI writing, coding, and creative tasks.</p>
+      <a class="btn-primary" href="/articles/chatgpt-vs-gemini-india.html">Learn More →</a>
+    </div>
+    <div class="ai-tool-card">
+      <div class="ai-tool-card-header">
+        <div class="ai-tool-card-icon">✨</div>
+        <div>
+          <div class="ai-tool-card-name">Google Gemini</div>
+          <div class="ai-tool-card-category">AI Chatbot</div>
+        </div>
+      </div>
+      <p class="ai-tool-card-desc">Best free AI for Indian users with excellent Hindi support.</p>
+      <a class="btn-primary" href="/articles/chatgpt-vs-gemini-india.html">Learn More →</a>
+    </div>
+    <div class="ai-tool-card">
+      <div class="ai-tool-card-header">
+        <div class="ai-tool-card-icon">🎨</div>
+        <div>
+          <div class="ai-tool-card-name">Midjourney</div>
+          <div class="ai-tool-card-category">AI Image</div>
+        </div>
+      </div>
+      <p class="ai-tool-card-desc">Generate stunning images from text — the most creative AI art tool.</p>
+      <a class="btn-primary" href="/articles/free-ai-image-generators.html">Learn More →</a>
+    </div>
+    <div class="ai-tool-card">
+      <div class="ai-tool-card-header">
+        <div class="ai-tool-card-icon">📝</div>
+        <div>
+          <div class="ai-tool-card-name">Notion AI</div>
+          <div class="ai-tool-card-category">AI Writing</div>
+        </div>
+      </div>
+      <p class="ai-tool-card-desc">AI-powered notes, docs, and project management in one workspace.</p>
+      <a class="btn-primary" href="/articles/best-ai-writing-tools-india.html">Learn More →</a>
+    </div>
+  </div>
+</section>
 
 <!-- LATEST ARTICLES -->
 <section id="latest">
   <div class="section-header">
     <h2 class="section-title">Latest Articles</h2>
-    <a class="section-link" href="#">View all →</a>
+    <a class="section-link" href="/articles.html">View all →</a>
   </div>
 
   <div class="articles-grid">
     <a class="article-card" href="/articles/best-ai-writing-tools-india.html">
       <div class="card-thumb">
-        <div class="card-thumb-inner" style="background:linear-gradient(135deg,#fef3ee,#fde0d0)">✍️</div>
+        <div class="card-thumb-inner" style="background:linear-gradient(135deg,#e8eaff,#c8d0ff)">✍️</div>
       </div>
-      <p class="card-tag">AI Writing</p>
-      <h3 class="card-title">Best AI Writing Tools for Indians in 2026 (Free & Paid)</h3>
-      <p class="card-excerpt">From blog posts to emails — these tools write faster than you can think. We tested 12 tools so you don't have to.</p>
-      <p class="card-meta">February 2026 · 8 min read</p>
+      <div class="card-content">
+        <p class="card-tag">AI Writing</p>
+        <h3 class="card-title">Best AI Writing Tools for Indians in 2026 (Free & Paid)</h3>
+        <p class="card-excerpt">From blog posts to emails — these tools write faster than you can think. We tested 12 tools so you don't have to.</p>
+        <p class="card-meta">February 2026 · 8 min read</p>
+      </div>
     </a>
 
     <a class="article-card" href="/articles/chatgpt-vs-gemini-india.html">
       <div class="card-thumb">
         <div class="card-thumb-inner" style="background:linear-gradient(135deg,#eef3ff,#d0dcff)">⚡</div>
       </div>
-      <p class="card-tag">Review</p>
-      <h3 class="card-title">ChatGPT vs Gemini for Indian Users — Which One to Use?</h3>
-      <p class="card-excerpt">Both are free. Both are powerful. But one is clearly better for Indian languages, pricing, and everyday tasks.</p>
-      <p class="card-meta">February 2026 · 6 min read</p>
+      <div class="card-content">
+        <p class="card-tag">Review</p>
+        <h3 class="card-title">ChatGPT vs Gemini for Indian Users — Which One to Use?</h3>
+        <p class="card-excerpt">Both are free. Both are powerful. But one is clearly better for Indian languages, pricing, and everyday tasks.</p>
+        <p class="card-meta">February 2026 · 6 min read</p>
+      </div>
     </a>
 
     <a class="article-card" href="/articles/free-ai-image-generators.html">
       <div class="card-thumb">
-        <div class="card-thumb-inner" style="background:linear-gradient(135deg,#eefbf0,#c8f0d0)">🎨</div>
+        <div class="card-thumb-inner" style="background:linear-gradient(135deg,#e8f4ff,#c0e0ff)">🎨</div>
       </div>
-      <p class="card-tag">Image AI</p>
-      <h3 class="card-title">5 Best Free AI Image Generators in 2026 — No Credit Card Needed</h3>
-      <p class="card-excerpt">Generate stunning images for free. Social media posts, thumbnails, art prints — these tools do it all.</p>
-      <p class="card-meta">February 2026 · 5 min read</p>
+      <div class="card-content">
+        <p class="card-tag">Image AI</p>
+        <h3 class="card-title">5 Best Free AI Image Generators in 2026 — No Credit Card Needed</h3>
+        <p class="card-excerpt">Generate stunning images for free. Social media posts, thumbnails, art prints — these tools do it all.</p>
+        <p class="card-meta">February 2026 · 5 min read</p>
+      </div>
     </a>
   </div>
 </section>
@@ -149,31 +239,89 @@
     <h2 class="section-title">Browse by Topic</h2>
   </div>
   <div class="topics-grid">
-    <a class="topic-pill" href="#">🤖 AI Chatbots</a>
-    <a class="topic-pill" href="#">✍️ AI Writing</a>
-    <a class="topic-pill" href="#">🎨 AI Image Tools</a>
-    <a class="topic-pill" href="#">💰 Earn with AI</a>
-    <a class="topic-pill" href="#">📹 AI Video</a>
-    <a class="topic-pill" href="#">📊 AI for Business</a>
-    <a class="topic-pill" href="#">🎓 AI for Students</a>
-    <a class="topic-pill" href="#">🆓 Free AI Tools</a>
+    <a class="topic-pill" href="/articles/chatgpt-vs-gemini-india.html">🤖 AI Chatbots</a>
+    <a class="topic-pill" href="/articles/best-ai-writing-tools-india.html">✍️ AI Writing</a>
+    <a class="topic-pill" href="/articles/free-ai-image-generators.html">🎨 AI Image Tools</a>
+    <a class="topic-pill" href="/articles/earn-money-ai-tools-india.html">💰 Earn with AI</a>
+    <a class="topic-pill" href="/tools.html">📹 AI Video</a>
+    <a class="topic-pill" href="/tools.html">📊 AI for Business</a>
+    <a class="topic-pill" href="/articles.html">🎓 AI for Students</a>
+    <a class="topic-pill" href="/tools.html">🆓 Free AI Tools</a>
   </div>
 </section>
+
+<!-- NEWSLETTER -->
+<div class="newsletter">
+  <div class="newsletter-inner">
+    <h2>Stay Ahead with AI</h2>
+    <p>Get weekly updates on the best AI tools, tips, and guides — straight to your inbox.</p>
+    <form class="newsletter-form" onsubmit="return false;">
+      <input type="email" placeholder="Enter your email" aria-label="Email for newsletter" />
+      <button class="btn-primary" type="submit">Subscribe</button>
+    </form>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">Vasriya</div>
-    <p class="footer-tagline">AI Tools, Reviews & Guides — Made for India</p>
-    <div class="footer-links">
-      <a href="/about.html">About</a>
-      <a href="/privacy.html">Privacy Policy</a>
-      <a href="/disclaimer.html">Disclaimer</a>
-      <a href="/contact.html">Contact</a>
+    <div class="footer-brand">
+      <div class="footer-logo">Vasriya<span>.</span></div>
+      <p class="footer-tagline">AI Tools, Reviews & Guides — Made for India</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
     </div>
+    <div class="footer-nav">
+      <div class="footer-nav-col">
+        <h4>Explore</h4>
+        <a href="/">Home</a>
+        <a href="/tools.html">AI Tools</a>
+        <a href="/articles.html">Articles</a>
+      </div>
+      <div class="footer-nav-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="footer-nav-col">
+        <h4>Legal</h4>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/disclaimer.html">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
     <p class="footer-copy">© 2026 Vasriya. Some links may be affiliate links. We only recommend tools we genuinely believe in.</p>
+    <div class="footer-legal">
+      <a href="/privacy.html">Privacy</a>
+      <a href="/disclaimer.html">Disclaimer</a>
+    </div>
   </div>
 </footer>
+
+<!-- BOTTOM NAV (Mobile) -->
+<nav class="bottom-nav" aria-label="Mobile navigation">
+  <div class="bottom-nav-inner">
+    <a href="/" class="active"><span class="bottom-nav-icon">🏠</span>Home</a>
+    <a href="/tools.html"><span class="bottom-nav-icon">🤖</span>Tools</a>
+    <a href="/articles.html"><span class="bottom-nav-icon">📝</span>Articles</a>
+    <a href="/contact.html"><span class="bottom-nav-icon">✉️</span>Contact</a>
+  </div>
+</nav>
+
+<!-- COOKIE CONSENT -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-inner">
+    <p class="cookie-text">We use cookies for ads and analytics. By continuing, you agree to our <a href="/privacy.html">Privacy Policy</a>.</p>
+    <button class="cookie-accept" id="cookieAccept">Got it</button>
+  </div>
+</div>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
 
 <script src="/assets/script.js" defer></script>
 </body>
