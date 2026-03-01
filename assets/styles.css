@@ -947,6 +947,25 @@ section {
 }
 .article-body a:hover { color: var(--primary-hover); }
 
+/* Override article-body link styles for affiliate buttons */
+.article-body .affiliate-btn {
+  color: #fff;
+  text-decoration: none;
+}
+.article-body .affiliate-btn:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Override article-body link styles for related article cards */
+.article-body .related-card {
+  text-decoration: none;
+  color: inherit;
+}
+.article-body .related-card:hover {
+  text-decoration: none;
+}
+
 .article-body ul, .article-body ol {
   margin: 0.8rem 0 1.2rem 1.5rem;
 }
