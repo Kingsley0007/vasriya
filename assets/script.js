@@ -66,10 +66,10 @@
   var searchResults = document.getElementById('searchResults');
 
   var searchIndex = [
-    { title: 'Best AI Writing Tools for Indians 2026', url: '/articles/best-ai-writing-tools-india.html', tags: 'ai writing chatgpt gemini notion copy tools free paid india' },
-    { title: 'ChatGPT vs Gemini for Indian Users', url: '/articles/chatgpt-vs-gemini-india.html', tags: 'chatgpt gemini comparison review hindi india free ai chatbot' },
+    { title: 'Best AI Writing Tools 2026', url: '/articles/best-ai-writing-tools-india.html', tags: 'ai writing chatgpt gemini notion copy tools free paid' },
+    { title: 'ChatGPT vs Gemini — Full Comparison', url: '/articles/chatgpt-vs-gemini-india.html', tags: 'chatgpt gemini comparison review multilingual free ai chatbot' },
     { title: '5 Best Free AI Image Generators 2026', url: '/articles/free-ai-image-generators.html', tags: 'ai image generator free midjourney dall-e firefly ideogram canva art' },
-    { title: 'How to Earn Money Using AI Tools in India', url: '/articles/earn-money-ai-tools-india.html', tags: 'earn money ai freelancing youtube affiliate content creation india' },
+    { title: 'How to Earn Money Using AI Tools', url: '/articles/earn-money-ai-tools-india.html', tags: 'earn money ai freelancing youtube affiliate content creation' },
     { title: 'AI Tools Directory', url: '/tools.html', tags: 'ai tools directory all chatgpt gemini midjourney claude' },
     { title: 'About Vasriya', url: '/about.html', tags: 'about vasriya mission vision founder story' },
     { title: 'Contact Us', url: '/contact.html', tags: 'contact email form business inquiry feedback' },
