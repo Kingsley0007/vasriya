@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3412848514366354"
+     crossorigin="anonymous"></script>
+  <title>Contact Us — Vasriya</title>
+  <meta name="description" content="Get in touch with Vasriya — for business inquiries, feedback, corrections, or collaboration opportunities." />
+  <meta property="og:title" content="Contact Us — Vasriya" />
+  <meta property="og:description" content="Reach out to Vasriya for business inquiries, feedback, or collaboration." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vasriya.com/contact.html" />
+  <link rel="canonical" href="https://vasriya.com/contact.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="/">Vasriya<span>.</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav>
+      <a href="/articles/best-ai-writing-tools-india.html">AI Writing</a>
+      <a href="/articles/chatgpt-vs-gemini-india.html">Reviews</a>
+      <a href="/articles/free-ai-image-generators.html">Image AI</a>
+      <a href="/articles/earn-money-ai-tools-india.html">Earn with AI</a>
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
+  </div>
+</header>
+
+<div class="legal-wrap contact-page">
+  <h1>Contact Us</h1>
+  <p>Have a question, feedback, business inquiry, or found an error in one of our articles? We'd love to hear from you.</p>
+
+  <div class="contact-form-wrap">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contactForm">
+      <!-- Replace YOUR_ACCESS_KEY with your Web3Forms access key -->
+      <input type="hidden" name="access_key" value="3d6f1381-4a9d-48bd-8fe6-58ec20481a5a" />
+      <input type="hidden" name="subject" value="New message from Vasriya Contact Form" />
+      <input type="hidden" name="from_name" value="Vasriya Contact Form" />
+      <!-- Honeypot spam protection -->
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <select id="subject" name="category">
+          <option value="" disabled selected>Select a topic</option>
+          <option value="General Feedback">General Feedback</option>
+          <option value="Business Inquiry">Business Inquiry</option>
+          <option value="Content Correction">Content Correction</option>
+          <option value="Collaboration">Collaboration</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <button type="submit" class="form-submit" id="submitBtn">Send Message</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+  </div>
+
+  <h2>Other Ways to Reach Us</h2>
+  <p>You can also email us directly at: <strong>contact@vasriya.com</strong></p>
+  <p>We typically respond within 24–48 hours.</p>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/disclaimer.html">Disclaimer</a>
+    </div>
+    <p class="footer-copy">© 2026 Vasriya. Some links may be affiliate links.</p>
+  </div>
+</footer>
+
+<script src="/assets/script.js" defer></script>
+<script>
+  const form = document.getElementById('contactForm');
+  const statusEl = document.getElementById('formStatus');
+  const submitBtn = document.getElementById('submitBtn');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    statusEl.textContent = '';
+    statusEl.className = 'form-status';
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(form)))
+      });
+      const data = await res.json();
+      if (data.success) {
+        statusEl.textContent = 'Message sent successfully! We\'ll get back to you soon.';
+        statusEl.classList.add('success');
+        form.reset();
+      } else {
+        statusEl.textContent = 'Something went wrong. Please try again or email us directly.';
+        statusEl.classList.add('error');
+      }
+    } catch (err) {
+      statusEl.textContent = 'Network error. Please try again later.';
+      statusEl.classList.add('error');
+    }
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Message';
+  });
+</script>
+</body>
+</html>
