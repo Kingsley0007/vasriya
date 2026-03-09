@@ -66,6 +66,11 @@
   var searchResults = document.getElementById('searchResults');
 
   var searchIndex = [
+    { title: 'What Is Agentic AI and How Do You Use It Efficiently?', url: '/articles/agentic-ai-guide-2026.html', tags: 'agentic ai ai agent guide autonomous ai workflow efficient agent usage multi step tasks' },
+    { title: 'How to Use OpenClaw Agent', url: '/articles/how-to-use-openclaw-agent.html', tags: 'openclaw agent openclaw workflow structured ai agent review loop tool permissions' },
+    { title: 'How to Use Claude CoWork', url: '/articles/how-to-use-claude-cowork.html', tags: 'claude cowork claude collaboration claude workflow collaborative ai writing planning review' },
+    { title: 'How to Use Perplexity Computer', url: '/articles/how-to-use-perplexity-computer.html', tags: 'perplexity computer perplexity research source backed ai citations research workflow compare tools' },
+    { title: 'What Are MCP and Skills?', url: '/articles/mcp-and-skills-guide.html', tags: 'what is mcp model context protocol skills ai skills reusable workflow agent integrations tools' },
     { title: 'Best AI Writing Tools 2026', url: '/articles/best-ai-writing-tools-india.html', tags: 'ai writing chatgpt gemini notion copy tools free paid' },
     { title: 'ChatGPT vs Gemini — Full Comparison', url: '/articles/chatgpt-vs-gemini-india.html', tags: 'chatgpt gemini comparison review multilingual free ai chatbot' },
     { title: '5 Best Free AI Image Generators 2026', url: '/articles/free-ai-image-generators.html', tags: 'ai image generator free midjourney dall-e firefly ideogram canva art' },
