@@ -171,6 +171,14 @@ header {
   color: var(--text);
   text-decoration: none;
   letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.logo-icon {
+  height: 32px;
+    width: 32px;
+  flex-shrink: 0;
 }
 .logo span { color: var(--primary); }
 
@@ -1450,6 +1458,14 @@ footer {
   font-weight: 700;
   color: var(--text);
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.footer-logo-icon {
+      height: 28px;
+    width: 28px;
+  flex-shrink: 0;
 }
 .footer-logo span { color: var(--primary); }
 .footer-tagline {
